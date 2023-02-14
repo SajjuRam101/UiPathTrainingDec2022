@@ -1,0 +1,113 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UiPath_Forms" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="704,659.2" sap2010:WorkflowViewState.IdRef="UiPath_Forms_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="27">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Form.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UiPath_Forms" sap:VirtualizedContainerService.HintSize="499.2,594.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="formOutput" />
+      <Variable x:TypeArguments="x:Boolean" Name="formDismissed" />
+      <Variable x:TypeArguments="x:String" Name="varFName" />
+      <Variable x:TypeArguments="x:String" Name="varLName" />
+      <Variable x:TypeArguments="x:String" Name="varGender" />
+      <Variable x:TypeArguments="x:String" Name="varEmail" />
+      <Variable x:TypeArguments="x:String" Name="varPhoneNum" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="27021cf5-298b-4a4a-804c-078bbec5f445" DevTools="False" DisableMaximizeButton="True" DisableMinimizeButton="True" DisableSanitize="True" Dismissed="[formDismissed]" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[formOutput]" FormHeight="500" FormSchema="%[{&quot;label&quot;:&quot;First Name&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;firstName&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Last Name&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;lastName&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Gender&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;optionsLabelPosition&quot;:&quot;right&quot;,&quot;inline&quot;:false,&quot;tableView&quot;:false,&quot;values&quot;:[{&quot;label&quot;:&quot;Male&quot;,&quot;value&quot;:&quot;male&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Female&quot;,&quot;value&quot;:&quot;female&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Do not want to specify&quot;,&quot;value&quot;:&quot;doNotWantToSpecify&quot;,&quot;shortcut&quot;:&quot;&quot;}],&quot;key&quot;:&quot;gender&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;input&quot;:true,&quot;defaultValue&quot;:&quot;doNotWantToSpecify&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;email&quot;,&quot;type&quot;:&quot;email&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;phoneNumber&quot;,&quot;type&quot;:&quot;phoneNumber&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100240&quot;,&quot;Name&quot;:&quot;Slate&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/slate.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/slate.png&quot;,&quot;OverrideCssUrl&quot;:&quot;&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="700" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="436.8,231.2" IconPath="C:\Users\Shiva\OneDrive\Desktop\Shiva\UiPath Coaching\Batch 2\Batch 2 Recordings\UIPath Icon.ico" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+      <ufa:FormActivity.Body>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ufa:FormActivity.Body>
+      <ufa:FormActivity.DelayBody>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_1" />
+        </ActivityAction>
+      </ufa:FormActivity.DelayBody>
+      <ufa:FormActivity.FormFieldsCollection>
+        <OutArgument x:TypeArguments="x:String" x:Key="firstName">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="varFName" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="lastName">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="varLName" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="gender">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="varGender" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="email">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="varEmail" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="phoneNumber">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="varPhoneNum" />
+        </OutArgument>
+      </ufa:FormActivity.FormFieldsCollection>
+    </ufa:FormActivity>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="436.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Form Dismissed : &quot; + formDismissed.ToString + vbCrLf + vbCrLf + &#xD;&#xA;&quot;Form Output : &quot; + formOutput.ToString]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="436.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[varPhoneNum]" />
+  </Sequence>
+</Activity>

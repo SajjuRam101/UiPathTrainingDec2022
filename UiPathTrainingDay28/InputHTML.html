@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> UiPath Input </title>
+</head>
+<body>
+	First Name : <input type="Text" id="firstName"><br><br>
+	Last Name : <input type="Text" id="lastName"><br><br>
+	<button name="Submit" id="submit" onclick="submitData()">Submit</button>
+<body>
+<Script>
+	function submitData()
+	{
+		var fName=document.getElementById("firstName").value;
+		var lName=document.getElementById("lastName").value;
+		
+		window.external.setResult(fName + " <sep> " + lName);
+		return true;
+	}
+</script>
+</html>
